@@ -4,20 +4,13 @@
     box-sizing: border-box;
 }
 body{
-    width: 100%;
     height: 100vh;
+    padding: 0;
+    margin: 0;
     overflow-x: hidden;
 }
 .html{
     scroll-behavior: smooth;
-}
-.background1{
-    width: 100%;
-    background-position: center;
-    scale: .9998;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
 }
 .header{
     z-index: 1;
@@ -78,211 +71,226 @@ body{
 .navbar a:hover::before{
     width: 100%;
 }
-.front{
+.firstpage{
     position: relative;
-}
-.maintext{
-    position: absolute;
-    top: 40%;
-    left: 70%; 
-    transform: translate(-50%, -50%);
-    font-size: 170px;
-    color: white; 
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    font-family: 'Arial', sans-serif; 
-    text-align: left;
-    line-height: 0.8;
-    margin: 0;
-}
-.subheading{
-    position: absolute;
-    top: 28rem;
-    left: 81rem; 
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    color: white; 
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    line-height: 0.9;
-    margin: 0;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.highlight{
-    color: rgb(202, 251, 7);
-}
-.aboutheading{
-    position: absolute;
-    top: 98%;
-    left: 75%; 
-    transform: translate(-50%, -50%);
-    font-size: 18px;
-    color: white; 
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-.skillbackground{
-    width: 100%;
+    min-height: 100vh;
+    width: 100vw;
+    background: url(./assets/backgroundnew.jpg);
+    background-size: cover;
     background-position: center;
-    scale: 1;
     overflow-x: hidden;
     margin: 0;
-    padding: 0;
+}
+.firstpage .maincontent h1{
+    position:relative;
+    text-align: left;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 10rem;
+    color: white;
+    top: 10rem;
+    left:15rem;
+    line-height: .8;
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+}
+.firstpage .maincontent .subheading{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    top: 10rem;
+    left:27rem;
+    text-align: right;
+    line-height: 1.9;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+.firstpage .maincontent .aboutheading{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+    top: 33rem;
+    left:0 ;
+    margin-left: 3rem;
+    text-align:left;
+    max-width: 400px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: italic;
 }
 .secondpage{
     position: relative;
-}
-.skillheading{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0; 
-    padding: 30px 10px;
-    font-size: 100px;
-    color: white; 
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    background: url(./assets/Skillsbackground.png);
+    min-height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    overflow-x: hidden;
     margin: 0;
 }
-.frontend{
+.secondpage .skillcontent h1{
     position: absolute;
-    top: 28%; 
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    font-size: 30px;
-    color: white; 
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    font-family: "Encode Sans Semi Expanded", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    text-align: left;
-    margin: 0;
-}
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: white;
+    font-size: 7rem;
+    padding: 10px 10px;
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 200;
 
+}
+.secondpage .skillcontent .frontend{
+    position:relative;
+    display: flex;
+    top: 10rem;
+    justify-content:center;
+    align-items:center;
+    color: white;
+    font-size: 2.2rem;
+    font-family: "Encode sans semi Expanded", sans-serif;
+    font-weight: 500;
+}
 .fronticon{
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-    transform: translate(-50%, -50%);
-    scale: .1;
-    display: flex;
-    gap: 40%; 
-}
-.icon-item {
-    text-align: center; 
-}
-.icon-item img {
     position: relative;
+    top: 10rem;
     display: flex;
-    scale: 1;
-    padding: 12px 2px;
+    justify-content: space-around; /* Distribute items evenly with space between */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap;
+    gap: 0;
 }
-.icon-item h1 {
-    font-size: 200px;
-    margin-bottom:200px;
-    color: white; 
-    font-family: "Encode Sans Semi Expanded", sans-serif;
-    font-weight: 600;
-    font-style: normal;
+.fronticon .icon-item {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    margin: 10px;
 }
-.backend{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    font-size: 30px;
-    color: white; 
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    font-family: "Encode Sans Semi Expanded", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    text-align: left;
-    margin: 0;
+.fronticon .icon-item img{
+    width: 60px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 5px;
+}
+.fronticon .icon-item h1{
+    color: white;
+    font-size: 1rem;
+}
+.secondpage .backend{
+    position:relative;
+    display: flex;
+    top: 12rem;
+    justify-content:center;
+    align-items:center;
+    color: white;
+    font-size: 2.2rem;
+    font-family: "Encode sans semi Expanded", sans-serif;
+    font-weight: 500;
 }
 .backendicon{
-    position: absolute;
-    top: 10%;
-    right: 0%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    scale: .1;
+    position: relative;
+    top: 12rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40%; 
+    justify-content: space-around; /* Distribute items evenly with space between */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap;
+    gap: 0;
 }
-.versioncontrol{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    font-size: 30px;
-    color: white; 
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    font-family: "Encode Sans Semi Expanded", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    text-align: left;
-    margin: 0;
+.backendicon .icon-item {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    margin: 10px;
+}
+.backendicon .icon-item img{
+    width: 60px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 5px;
+}
+.backendicon .icon-item h1{
+    color: white;
+    font-size: 1rem;
+}
+.secondpage .versioncontrol{
+    position:relative;
+    display: flex;
+    top: 12rem;
+    justify-content:center;
+    align-items:center;
+    color: white;
+    font-size: 2.2rem;
+    font-family: "Encode sans semi Expanded", sans-serif;
+    font-weight: 500;
 }
 .version{
-    position: absolute;
-    top: 30%;
-    right: 0%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    scale: .1;
+    position: relative;
+    top: 12rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40%; 
+    justify-content: space-around; /* Distribute items evenly with space between */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap;
+    gap: 0;
+    
+}
+.version .icon-item {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    margin: 10px;
+}
+.version .icon-item img{
+    width: 50px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 5px;
+}
+.version .icon-item h1{
+    color: white;
+    font-size: 1rem;
 }
 .thirdpage{
     position: relative;
-}
-.projectbackground{
-    width: 100%;
-    background-position: center;
-    scale: 1;
+    background: url(./assets/Skillsbackground.png);
+    min-height: 100vh;
+    width: 100vw;
+    background-size: cover;
     overflow-x: hidden;
     margin: 0;
-    padding: 0;
 }
-.projectheading{
+.thirdpage .projectheading{
     position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
     color: white;
-    padding: 30px 10px;
-    font-size: 100px;
-    color: white; 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    text-align: left;
-    margin: 0;
+    font-size: 7rem;
+    padding: 10px 10px;
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 200;
 }
-.gallerytoon{
-    position: absolute;
-    top: 30%;
-    right: 0;
-    left: 0;
-    text-align: center;
-    font-size: 50px;
+.thirdpage .gallerytoon{
+    position:relative;
+    display: flex;
+    top: 12rem;
+    justify-content:center;
+    align-items:center;
     color: white;
-    font-family: "Encode Sans Semi Expanded", sans-serif;
-    font-weight: 600;
-    font-style: normal;
+    font-size: 2.5rem;
 }
 .container{
-    position: absolute;
+    position: relative;
     padding: 2rem;
-    top: 17rem;
+    top: 6rem;
     left: 0;
     right: 0;
     bottom: 0;
@@ -296,7 +304,7 @@ body{
     position: absolute;
     display: flex;
     aspect-ratio: 16/9;
-    scale: .8;
+    scale: .6;
     top: 0;
     right: 0;
     left: 0;
@@ -317,10 +325,11 @@ body{
     object-fit:contain;
 }
 .slider-nav {
+    position: absolute;
     display: flex;
     column-gap: 1rem;
     position: absolute;
-    top: 22rem;
+    top: 23rem;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -329,61 +338,58 @@ body{
     width: 0.7rem;
     height: 0.7rem;
     border-radius: 50%;
-    background-color: #1e1a1a;
-    opacity: .5;
+    background-color: #ffffff;
+    opacity: 1;
     transition: opacity ease 1000ms;
 }
 .slider-nav a:hover {
     opacity: 100%;
 }
+.description{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: white;
+    top: 25rem;
+}
 .description h2{
-    position: absolute;
-    font-size: 20px;
-    top: 45rem;
+    position: relative;
+    text-align: center;
     left: 0;
     right: 0;
-    bottom: 0;
-    color: aliceblue;
-    text-align: center;
-    font-family: "Encode Sans Semi Expanded", sans-serif;
-    font-weight: 600;
-    font-style: italic;
 }
 .description a{
     position: absolute;
-    top: 50rem;
-    left: 0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    top: 5rem;
     right: 0;
-    bottom: 0;
-    color: aliceblue;
-    text-align: center;
+    left: 0;
+    font-size: 1.5rem;
+    color: white ;
     text-decoration: none;
-    font-family: "Encode Sans Semi Expanded", sans-serif;
-    font-weight: 600;
-    font-style: normal;
 }
 .fourthpage{
     position: relative;
-}
-.achivebackground{
-    width: 100%;
-    background-position: center;
-    scale: 1;
+    background: url(./assets/Skillsbackground.png);
+    min-height: 100vh;
+    width: 100vw;
+    background-size: cover;
     overflow-x: hidden;
     margin: 0;
-    padding: 0;
 }
-.achiheading{
+.fourthpage .achiheading{
     position: absolute;
-    top: 0;
-    padding: 30px 10px;
-    font-size: 100px;
-    color: white; 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    text-align: left;
-    margin: 0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: white;
+    font-size: 7rem;
+    padding: 10px 10px;
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 200;
 }
 .fourthcontainer {
     position: absolute;
@@ -391,8 +397,10 @@ body{
     left: 5rem;
     display: flex;
     gap: 5rem; 
-    padding: 10px;
-    align-items: flex-start; 
+    padding: 10px; 
+    justify-content: space-around; /* Distribute items evenly with space between */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap;
 }
 .achievement-item {
     display: flex;
@@ -416,43 +424,41 @@ body{
     font-style: normal;
 }
 .fifthpage{
-    position: absolute;
-}
-.contactback{
-    width: 100%;
-    background-position: center;
-    scale: 1;
+    position: relative;
+    background: url(./assets/Skillsbackground.png);
+    min-height: 100vh;
+    width: 100vw;
+    background-size: cover;
     overflow-x: hidden;
     margin: 0;
-    padding: 0;
 }
-.avatar{
-    position: absolute;
-    width: 30rem;
-    height: auto;
-    top: 0;
-    left: 2rem;
-    right: 0;
-    bottom: 0;
-}
-.textcontact{
-    position: absolute;
-    font-size: 6.25rem;
-    color: white;
+.fifthpage .contactcontent{
+    position: relative;
     display: flex;
-    text-align: right;
-    right: 10rem;
+    align-items: left;
+}
+.fifthpage .contactcontent img{
+    position: relative;
+    top: 0rem;
+    left: 10rem;
+    width: 28rem;
+}
+.fifthpage .contactcontent h1{
+    position: absolute;
+    font-size: 8rem;
     top: 3rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    right: 10rem;
+    color: white;
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 200;
 }
 .contactform{
-    border-radius: 2rem;
     position: absolute;
-    top: 238rem;
-    right: 10rem;
-    align-items: center;
-    width: 40%;
+    display: flex;
+    bottom: 7rem;
+    left: 55rem;
+    border-radius: 2rem;
+    width: 30rem;
     padding: 20px;
     background: #ffffff;
 }
@@ -467,7 +473,7 @@ body{
 }
 .contactform .inputbox textarea ,
 .contactform .inputbox input{
-    width: 100%;
+    min-width: 25rem;
     padding: 5px 0;
     font-size: 16px;
     margin: 10px 0;
@@ -505,20 +511,19 @@ body{
     font-size: 18px;
 }
 .socialmedia{
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: row;
+    top: 37rem;
     gap: 30px;
-    top:38rem;
-    left: 12rem;
-    right: 0;
+    left: 17rem;
 }
 .socialmedia img{
     width: 2rem;
     height: auto;
     aspect-ratio: 4/3;
     object-fit: contain;
-    opacity: .5;
+    opacity: .7;
     transition: .3s;
     text-decoration: none;
 }
@@ -528,7 +533,7 @@ body{
 }
 .footer{
     position:relative;
-    top: 50rem;
+    top:0;
     background-color: #747474;
     width: 100%;
     padding: 6px;
@@ -540,3 +545,6 @@ body{
     font-weight: 600;
     font-style: normal;
 }
+
+
+
